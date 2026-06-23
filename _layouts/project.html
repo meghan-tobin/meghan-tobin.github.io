@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<header>
+{% if site.theme_config.show_navbar == true %}
+  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+  <div class="dashed"></div>
+{% endif %}
+  <a href="/projects" class="project-back-link">← projects</a>
+  <h1 class="project-title">{{ page.title }}</h1>
+  {% if page.description %}
+    <div class="project-desc-lede">{{ page.description | markdownify }}</div>
+  {% endif %}
+</header>
+
+<div class="dashed"></div>
+
+<details>
+  <summary>PRD</summary>
+  {{ content }}
+</details>
+
+<details>
+  <summary>Codebase</summary>
+  {% if page.github_url %}
+    <p><a href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">{{ page.github_url }}</a></p>
+  {% else %}
+    <p>GitHub link coming soon.</p>
+  {% endif %}
+</details>
+
+<details>
+  <summary>Demo</summary>
+  {% if page.demo_url %}
+    <p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">View Demo →</a></p>
+  {% else %}
+    <p>Demo coming soon.</p>
+  {% endif %}
+</details>

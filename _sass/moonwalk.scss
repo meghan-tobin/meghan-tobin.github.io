@@ -1,5 +1,5 @@
 :root {
-  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -10,7 +10,7 @@ html { height: 100%; }
 
 body {
   font-family: var(--font-sans);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.7;
   margin: 0;
   min-height: 100%;
@@ -116,9 +116,15 @@ img {
   display: block;
   margin: 0 auto;
 }
-.page-content img {
+.page-content img:not(.card-graphic img) {
   border-radius: 0.5em;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card-graphic img {
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
 }
 @mixin light-appearance {
   html, body {
@@ -128,20 +134,23 @@ img {
       --headings: #0f172a;
       --text: #2b2f36;
       --text-secondary: #5b6470;
-      --links: #4f46e5;
-      --highlight: #FFECB2;
+      --links: #5c7f4a;
+      --highlight: #d4e6c3;
+      --inline-links: #0891b2;
       --code-text: #9D174D;
       --share-text: #999;
       --border: rgba(15, 23, 42, 0.08);
       --border-subtle: rgba(15, 23, 42, 0.05);
+      --vine-sheet: rgba(252, 252, 252, 0.87);
   }
 }
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   html, body  {
       --headings: #e6edf3;
-      --links: #91A7FF;
-      --highlight: #41C7C7;
+      --links: #93bb78;
+      --highlight: #6b9c56;
+      --inline-links: #22d3ee;
       --bg: #15161d;
       --bg-secondary: #23242f;
       --bg-subtle: #1c1d26;
@@ -151,6 +160,7 @@ img {
       --share-text: #C4C4C4;
       --border: rgba(255, 255, 255, 0.08);
       --border-subtle: rgba(255, 255, 255, 0.05);
+      --vine-sheet: rgba(21, 22, 29, 0.90);
   };
 }
 
@@ -811,3 +821,357 @@ details:not(.toc):not([class*="markdown-alert"]) {
   }
 }
 // ----------------------------------------------- //
+
+// -------------- HOME PILLS -------------- //
+.home-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.home-pill {
+  display: inline-block;
+  padding: 0.45em 1.4em;
+  border: 1.5px solid var(--links);
+  border-radius: 2em;
+  color: var(--links);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background-color: var(--links);
+    color: var(--bg);
+  }
+}
+
+.home-pill-contact {
+  outline: none;
+}
+
+.contact-card {
+  display: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+
+  &.visible { display: block; }
+}
+
+.contact-card-item {
+  margin: 0.3rem 0;
+  color: var(--text);
+}
+
+.contact-label {
+  font-weight: 600;
+  color: var(--headings);
+}
+// ---------------------------------------- //
+
+// -------------- ABOUT PAGE -------------- //
+.about-hero {
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+
+  h1 { margin-top: 0.25rem; }
+}
+
+.about-photo {
+  float: left;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  margin: 0 2rem 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .about-photo {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+.about-bio {
+  flex: 1;
+  p { margin-top: 0.5rem; }
+}
+
+.about-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1.1rem 0;
+
+  > div:first-child { flex: 1; }
+}
+
+.about-entry-title {
+  font-weight: 600;
+  color: var(--headings);
+}
+
+.about-entry-sub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 0.15rem;
+}
+
+.about-entry-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  border-left: 2px solid var(--border-subtle);
+  padding-left: 1rem;
+}
+
+.about-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 1.1rem;
+  &:first-child { margin-top: 0.4rem; }
+}
+
+.about-role-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--headings);
+}
+
+.about-role-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.about-entry-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.hobby-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hobby-tag {
+  cursor: pointer;
+  user-select: none;
+}
+
+.hobby-detail {
+  display: flex;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  gap: 1.5rem;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+}
+
+.hobby-detail-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+
+  &.hobby-detail-photo--tall {
+    width: 300px;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+    object-position: top;
+  }
+}
+
+.hobby-detail-text {
+  flex: 1;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.hobby-tag-active {
+  color: var(--links);
+  border-color: var(--links);
+}
+
+@media screen and (max-width: 600px) {
+  .hobby-detail { flex-direction: column; }
+  .hobby-detail-photo { width: 100%; height: 180px; }
+}
+// ---------------------------------------- //
+
+// -------------- INLINE CONTENT LINKS -------------- //
+.w p a {
+  color: var(--inline-links);
+  &:hover { color: var(--inline-links); opacity: 0.8; }
+}
+// -------------------------------------------------- //
+
+// -------------- VINE BACKGROUND (home page only) -------------- //
+.vine-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.vine {
+  position: absolute;
+  opacity: 0.28;
+}
+
+// now on the right side
+.vine-1 {
+  width: 210px;
+  top: -10px;
+  right: 20px;
+  transform: rotate(-6deg);
+}
+
+// frog: bottom-left corner
+.frog-accent {
+  width: 70px;
+  bottom: 20px;
+  right: 10px;
+  opacity: 0.32;
+}
+
+// top-left corner: flipped from right
+.vine-2 {
+  width: 280px;
+  top: -60px;
+  left: 0px;
+  transform: rotate(10deg);
+}
+
+// bottom-left side
+.vine-3 {
+  width: 230px;
+  bottom: -25px;
+  left: -30px;
+  transform: rotate(-5deg) scaleX(-1);
+}
+
+// Lift content above the vine layer and add the translucent sheet
+body:has(.vine-bg) main.page-content {
+  position: relative;
+  z-index: 1;
+}
+
+body:has(.vine-bg) .w {
+  background-color: var(--vine-sheet);
+  border-radius: var(--radius-lg);
+}
+
+@media screen and (max-width: 600px) {
+  body:has(.vine-bg) .w {
+    border-radius: 0;
+  }
+  .vine-1 { width: 160px; left: -20px; }
+  .vine-2 { width: 190px; right: -30px; }
+  .vine-3 { width: 170px; right: -20px; }
+}
+// -------------------------------------------------------------- //
+
+// -------------- PROJECT DETAIL PAGE -------------- //
+.project-back-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  &:hover { color: var(--links); }
+}
+
+.project-desc-lede {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+// ------------------------------------------------- //
+
+// -------------- PROJECTS GRID (2-col) -------------- //
+.project-cards ul.horizontal-list .card {
+  width: calc(50% - 0.4em);
+}
+@media screen and (max-width: 600px) {
+  .project-cards ul.horizontal-list .card {
+    width: 100%;
+  }
+}
+// --------------------------------------------------- //
+
+// -------------- WRITING LIST -------------- //
+.writing-list {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+
+  .writing-item {
+    padding: 1.1em 0;
+    border-bottom: 1px solid var(--border-subtle);
+    margin: 0;
+
+    &:first-child { border-top: 1px solid var(--border-subtle); }
+  }
+
+  .writing-item-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--headings);
+    text-decoration: none;
+    display: block;
+    &:hover { color: var(--links); }
+  }
+
+  .writing-item-placeholder {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .writing-item-desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin: 0.3em 0 0;
+  }
+}
+// ------------------------------------------ //

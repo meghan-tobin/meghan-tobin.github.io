@@ -1,104 +1,54 @@
 navbar_entries:
   - title: about
-    url: about
+    url: /
+    home: true
 
-  - title: blog
-    url: blog
+  - title: projects
+    url: /projects
 
-  - title: website
-    url: https://www.abhinav.co
+  - title: writing
+    url: /writing
 
-project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
-
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
-
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
-
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
-
-old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
-
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
-
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
-
-footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
-
-  - title: twitter
-    url: https://twitter.com/abhinav
+  - title: resume
+    url: /assets/images/MeghanTobinResume.pdf
+    resume: true
 
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/meghan-tobin
+    icon: github
+    push_right: true
 
-  - title: feed
-    url: feed.xml
+  - title: linkedin
+    url: https://linkedin.com/in/meghantobin
+    icon: linkedin
 
-  - title: llms.txt
-    url: llms.txt
+  - title: email
+    url: mailto:megt1310@gmail.com
+    icon: email
 
-misc_entries:
-  - title: this is an example vertical list
+writing_entries:
+  - title: "Technical Writing Piece 1"
+    desc: Placeholder — add a short description of this piece.
     url: false
 
-  - title: you can show or hide using a boolean flag in _config.yml
+  - title: "Technical Writing Piece 2"
+    desc: Placeholder — add a short description of this piece.
     url: false
 
-  - title: and you can add data in _data/home.yml
+  - title: "Technical Writing Piece 3"
+    desc: Placeholder — add a short description of this piece.
     url: false
 
-  - title: Blog posts
-    post_list: true
+  - title: "Technical Writing Piece 4"
+    desc: Placeholder — add a short description of this piece.
     url: false
 
-  - title: moonwalk on the Internet
+  - title: "Technical Writing Piece 5"
+    desc: Placeholder — add a short description of this piece.
     url: false
-    entries:
-      - title: on Github
-        url: https://github.com/abhinavs/moonwalk
 
-      - title: originally built for abhinav's homepage
-        url: https://www.abhinav.co
+  - title: "Technical Writing Piece 6"
+    desc: Placeholder — add a short description of this piece.
+    url: false
 
-      - title: this list is scalable and can be nested
-        url: false
-        entries:
-          - title: this is nested inside a nested list
-            url: false
-
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
-
-
+footer_entries: []
