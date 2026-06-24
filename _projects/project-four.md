@@ -1,7 +1,15 @@
 ---
 layout: project
-title: Wikipedia Pathfinder
-description: This si a revamed project from a data structures class in college. I was tasked with working woith a directional graph database of my choosing, and writing different algortithms to demonstrate graph iteration. I had recently watched videos of people play the wikipedia game where the whole point is trying to get the shortest path from one wiki page to the other using hyperlinks. I chose a wikipedia database and wrote bfs, dfs algorithms in c to iterate over the hyperlinks. I also implemented pagerank and encorperated that into my algorithms. This never had a front end in college, but I recently created a front end for it to better hsowcase the project! 
+title: Wikipedia Automator
+description: This is a revamped project from my Data Structures course in college. The assignment was to work with a directed graph
+  dataset of our choosing and implement graph traversal algorithms to explore it.
+  
+  Around that time I'd been watching people play the Wikipedia Game — the challenge of navigating from one Wikipedia article to
+  another in as few hyperlink clicks as possible. I used a Wikipedia hyperlink graph as my dataset and implemented BFS, DFS,
+  and PageRank-based algorithms in C++ to find paths between articles.
+
+  The original submission was command-line only. I recently built a frontend to better showcase it — it animates the path
+  between articles as it's discovered and lets you compare how each algorithm explores the graph differently.
 order: 4
 github_url: https://github.com/meghan-tobin/Wikipedia-Automater
 demo_url:

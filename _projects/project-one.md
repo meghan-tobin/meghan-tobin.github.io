@@ -2,11 +2,13 @@
 layout: project
 title: Where's the Whimsey
 description: | 
-    Are you tired of your mundane life? You are probably in need of some Whimsey...
+    Are you tired of your mundane life? You might be in need of some whimsy.
 
-    <description>
-
-    This project had some unconventional inspiration. I recently lived with a roommate who consistencly expressed a discontent about their life. The more I got to know them, they had a very routine and rigid lifestyle. They only read non fiction books, watched one type of TV shows, hung out with one group of peopele. All I could think of was "Where is the Whimsey?". Could this person enjoy life more if there was something that helped them move past their comfort zone in a structured way? What would that look like? The more I thought about this the more I realized I myself would benefit from an application like this. If there was a way to add in something new to your week, I would love that. This is where this project was born!
+    This project had some unconventional inspiration. I once lived with a roommate who consistently expressed discontent with
+    their life — and the more I got to know them, the clearer it became why. They had an incredibly routine and rigid lifestyle:
+    only nonfiction books, one type of TV show, the same group of people. All I could think was, "where is the whimsy?" Could
+    this person enjoy life more if something helped them move past their comfort zone in a structured way? The more I thought
+    about it, the more I realized I'd benefit from something like that too. A way to add something new to your week.
 
 order: 1
 github_url: https://github.com/meghan-tobin/WheresTheWhimsy

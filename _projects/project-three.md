@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Bijoux Breakdown
-description: I found myself strugling to keep track or pricing, material usage, and time when organizing a jewlery collection. Thats the inspo for this project, I was constantly sketching things out in notbooks, and frustratingly erasing them as collection plans changes. I also did not weant to calculate the specific cost of everything or use excel (also a pain to set up). Found myself wanting a simple visial tool that coul dfunction like my notbookm, do calum,lations, and be easily configuatble and changable unlike my notehbook. Thi sis where the scketbook theming comes from,
+description: Designing a jewelry collection means constantly juggling material costs, time, and pricing — and for me, that meant a lot of notebook sketches that got erased the moment plans changed. Spreadsheets were too rigid and too much work to set up, and I kept wishing for something in between; visual like a sketchbook, but smart enough to handle the math automatically. BijouxBreakdown is that tool. It's a drag-and-drop board where you define material configurations, log time costs, and track selling prices — without touching a formula. The sketchbook aesthetic is intentional; it's meant to feel like the notebook it replaces, just one that does the calculations for you.
 order: 3
 github_url: https://github.com/meghan-tobin/BijouxBreakdown
 demo_url:
