@@ -14,16 +14,7 @@ order: 1
 github_url: https://github.com/meghan-tobin/WheresTheWhimsy
 demo_url:
 graphic: /assets/images/whimsey.png
+docs:
+    - title: README
+      url: https://raw.githubusercontent.com/meghan-tobin/WheresTheWhimsy/refs/heads/main/README.md
 ---
-
-## Problem
-
-Describe the problem this project solves. What was the gap or pain point you identified?
-
-## Approach
-
-Explain your approach, key decisions, and any trade-offs you made along the way.
-
-## Outcomes
-
-What was the result? Metrics, impact, or key takeaways.

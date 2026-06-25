@@ -17,8 +17,17 @@ layout: default
 <div class="dashed"></div>
 
 <details>
-  <summary>PRD</summary>
-  {{ content }}
+  <summary>Documentation</summary>
+  {% if page.docs %}
+    {% for doc in page.docs %}
+      <details class="doc-entry" data-doc-url="{{ doc.url }}">
+        <summary>{{ doc.title }}</summary>
+        <div class="doc-entry-content">Loading...</div>
+      </details>
+    {% endfor %}
+  {% else %}
+    {{ content }}
+  {% endif %}
 </details>
 
 <details>
@@ -38,3 +47,33 @@ layout: default
     <p>Demo coming soon.</p>
   {% endif %}
 </details>
+
+{% if page.docs %}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+(function () {
+  document.querySelectorAll('.doc-entry').forEach(function (entry) {
+    var content = entry.querySelector('.doc-entry-content');
+    var url = entry.dataset.docUrl;
+    var loaded = false;
+
+    entry.addEventListener('toggle', function () {
+      if (entry.open && !loaded) {
+        loaded = true;
+        fetch(url)
+          .then(function (res) {
+            if (!res.ok) throw new Error('Failed to load');
+            return res.text();
+          })
+          .then(function (md) {
+            content.innerHTML = marked.parse(md);
+          })
+          .catch(function () {
+            content.innerHTML = '<p>Could not load. <a href="' + url + '" target="_blank">View on GitHub →</a></p>';
+          });
+      }
+    });
+  });
+})();
+</script>
+{% endif %}
