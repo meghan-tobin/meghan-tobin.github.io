@@ -14,6 +14,7 @@ order: 4
 github_url: https://github.com/meghan-tobin/Wikipedia-Automater
 demo_url:
 graphic: /assets/images/wiki.png
+demo_video: /assets/videos/wikidemo.mp4
 ---
 
 ## Problem

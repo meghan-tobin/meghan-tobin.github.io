@@ -41,7 +41,15 @@ layout: default
 
 <details>
   <summary>Demo</summary>
-  {% if page.demo_url %}
+  {% if page.demo_video %}
+    <video controls style="max-width:100%;display:block;margin-top:0.5em;">
+      <source src="{{ page.demo_video }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    {% if page.demo_url %}
+      <p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">View Live Demo →</a></p>
+    {% endif %}
+  {% elsif page.demo_url %}
     <p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">View Demo →</a></p>
   {% else %}
     <p>Demo coming soon.</p>
