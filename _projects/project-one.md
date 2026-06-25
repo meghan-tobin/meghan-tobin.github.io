@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Where's the Whimsey
+title: Where's the Whimsy
 description: | 
     Are you tired of your mundane life? You might be in need of some whimsy.
 
