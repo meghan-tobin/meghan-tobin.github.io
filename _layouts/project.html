@@ -13,9 +13,7 @@ layout: default
     <div class="project-desc-lede">{{ page.description | markdownify }}</div>
   {% endif %}
   {% if page.website_url %}
-    <div style="margin-top:0.75rem;">
-      <a href="{{ page.website_url }}" target="_blank" rel="noopener noreferrer" class="home-pill">{{ page.website_url | remove: 'https://' | remove: 'http://' | remove: 'www.' }}</a>
-    </div>
+    <div style="margin-top:0.5rem;font-size:1.05rem;color:var(--text-secondary);">Website: <a href="{{ page.website_url }}" target="_blank" rel="noopener noreferrer" style="font-family:var(--font-mono);font-size:0.85rem;color:var(--links);text-decoration:none;">{{ page.website_url }}</a></div>
   {% endif %}
 </header>
 
