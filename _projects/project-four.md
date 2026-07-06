@@ -15,16 +15,7 @@ github_url: https://github.com/meghan-tobin/Wikipedia-Automater
 demo_url:
 graphic: /assets/images/wiki.png
 demo_video: /assets/videos/wikidemo.mp4
+docs:
+    - title: README
+      url: https://raw.githubusercontent.com/meghan-tobin/Wikipedia-Automater/refs/heads/main/README.md
 ---
-
-## Problem
-
-Describe the problem this project solves. What was the gap or pain point you identified?
-
-## Approach
-
-Explain your approach, key decisions, and any trade-offs you made along the way.
-
-## Outcomes
-
-What was the result? Metrics, impact, or key takeaways.
