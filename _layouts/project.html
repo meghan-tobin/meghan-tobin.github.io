@@ -12,6 +12,11 @@ layout: default
   {% if page.description %}
     <div class="project-desc-lede">{{ page.description | markdownify }}</div>
   {% endif %}
+  {% if page.website_url %}
+    <div style="margin-top:0.75rem;">
+      <a href="{{ page.website_url }}" target="_blank" rel="noopener noreferrer" class="home-pill">{{ page.website_url | remove: 'https://' | remove: 'http://' | remove: 'www.' }}</a>
+    </div>
+  {% endif %}
 </header>
 
 <div class="dashed"></div>

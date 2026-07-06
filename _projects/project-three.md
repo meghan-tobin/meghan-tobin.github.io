@@ -5,6 +5,7 @@ description: Designing a jewelry collection means constantly juggling material c
 
 order: 3
 github_url: https://github.com/meghan-tobin/BijouxBreakdown
+website_url: https://bijouxbreakdown.com/
 demo_url:
 graphic: /assets/images/earrings2.png
 demo_video: /assets/videos/bijoux.mp4
