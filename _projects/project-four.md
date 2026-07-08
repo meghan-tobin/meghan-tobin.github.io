@@ -12,6 +12,7 @@ description: This is a revamped project from my Data Structures course in colleg
   between articles as it's discovered and lets you compare how each algorithm explores the graph differently.
 order: 4
 github_url: https://github.com/meghan-tobin/Wikipedia-Automater
+website_url: https://wikiautomator.dev/
 demo_url:
 graphic: /assets/images/wiki.png
 demo_video: /assets/videos/wikidemo.mp4
