@@ -7,8 +7,7 @@ navbar_entries:
     url: /projects
 
   - title: resume
-    url: /assets/images/MeghanTobinResume.pdf
-    resume: true
+    url: /resume
 
   - title: github
     url: https://github.com/meghan-tobin
