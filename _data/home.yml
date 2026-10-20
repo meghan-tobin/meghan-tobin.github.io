@@ -6,9 +6,6 @@ navbar_entries:
   - title: projects
     url: /projects
 
-  - title: writing
-    url: /writing
-
   - title: resume
     url: /assets/images/MeghanTobinResume.pdf
     resume: true
@@ -25,30 +22,5 @@ navbar_entries:
   - title: email
     url: mailto:megt1310@gmail.com
     icon: email
-
-writing_entries:
-  - title: "Technical Writing Piece 1"
-    desc: Placeholder — add a short description of this piece.
-    url: false
-
-  - title: "Technical Writing Piece 2"
-    desc: Placeholder — add a short description of this piece.
-    url: false
-
-  - title: "Technical Writing Piece 3"
-    desc: Placeholder — add a short description of this piece.
-    url: false
-
-  - title: "Technical Writing Piece 4"
-    desc: Placeholder — add a short description of this piece.
-    url: false
-
-  - title: "Technical Writing Piece 5"
-    desc: Placeholder — add a short description of this piece.
-    url: false
-
-  - title: "Technical Writing Piece 6"
-    desc: Placeholder — add a short description of this piece.
-    url: false
 
 footer_entries: []

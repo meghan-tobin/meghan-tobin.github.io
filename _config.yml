@@ -25,7 +25,7 @@ theme_config:
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: false # managed by /projects page instead
-  show_blog: false # replaced by /writing page
+  show_blog: false
   show_old_projects: false
   show_misc_list: false
   show_reading_time: true # show number of words and reading time in the blog posts

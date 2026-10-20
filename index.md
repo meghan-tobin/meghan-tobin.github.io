@@ -9,11 +9,9 @@ layout: home
     <p>
        I'm a Software Engineer based in San Francisco. I'm originally from Boston, but I decided to leave the cold winters behind and move to California after graduating from the University of Illinois Urbana-Champaign with a degree in Computer Science!
        <br><br>
-       My interest in Computer Science began in high school. I always enjoyed math, and one of my teachers encouraged me to explore programming. I entered college with very little coding experience, but it didn't take long for me to realize I had found the right field. I was fascinated by the wide range of applications for computer science and the endless opportunities to solve meaningful problems. During my time at UIUC, I developed a particular interest in cybersecurity and became actively involved in cybersecurity organizations on campus.
+       What have i done professionally
        <br><br>
-       While I enjoy the technical challenge of software engineering, I found myself increasingly drawn to the collaborative side of building products. Throughout my career, I've worked closely with engineers, product teams, interns, and stakeholders to define requirements, scope projects, create learning programs, and guide initiatives from concept to implementation. These experiences showed me that my greatest strengths lie not only in developing technical solutions, but also in aligning people around a common goal, communicating complex ideas clearly, and helping turn ideas into successful outcomes.
-       <br><br>
-       What excites me most is working at the intersection of technology and people. I enjoy leveraging my technical background while partnering with engineers, product teams, and stakeholders to align goals, solve complex problems, and turn ideas into reality. This combination of technical problem-solving, communication, and collaboration allows me to have the greatest impact and is the type of work I find most fulfilling.
+       pivot to PM
     </p>
   </div>
 </div>
@@ -39,10 +37,10 @@ layout: home
     <div class="about-entry-title">Everfox</div>
     <div class="about-entry-desc">
       <div class="about-role">
-        <span class="about-role-title">Software Engineering Intern</span>
-        <span class="about-role-date">Summer 2023</span>
+        <span class="about-role-title">Software Engineer II</span>
+        <span class="about-role-date">Feb 2025 – Present</span>
       </div>
-      I joined my current company in 2023 as a software engineering intern, where I worked on two main projects spanning user-facing system improvements and hardware qualification workflows. One project focused on building security-aware UI signals for RGB keyboards using D-Bus and Python, designed to reduce user error when switching between data classification levels. The second project transitioned me into a more open-ended hardware qualification problem, where I was responsible for defining project requirements and independently designing a solution approach.
+      As a Software Engineer II, my focus shifted toward platform ownership and large-scale system rollout. I led the transformation of a proof-of-concept codebase into a mission-critical platform, defining architecture improvements, rollout strategy, and engineering standards while mentoring interns and driving feature development under aggressive timelines. I partnered with over 10 engineering teams to drive migration readiness, coordinate dependencies, and manage rollout execution, ensuring successful adoption across the organization. I also built operational dashboards and training systems to support migration monitoring, self-serve debugging, and end-to-end platform usage.
 
       <div class="about-role">
         <span class="about-role-title">Software Engineer I</span>
@@ -51,10 +49,10 @@ layout: home
       As a Software Engineer I, I moved into low-level systems and platform work across multiple engineering teams. I contributed to security hardening through seccomp-based compliance validation, improved system reliability through cross-product bug fixing, and integrated Coverity into the CI and developer toolchain to enable automated static analysis across the organization. During this time, I also operated and helped scale a newly established internship program, and led the largest intern project end-to-end, delivering a production-used hardware testing system and establishing execution standards for future cohorts.
 
       <div class="about-role">
-        <span class="about-role-title">Software Engineer II</span>
-        <span class="about-role-date">Feb 2025 – Present</span>
+        <span class="about-role-title">Software Engineering Intern</span>
+        <span class="about-role-date">Summer 2023</span>
       </div>
-      As a Software Engineer II, my focus shifted toward platform ownership and large-scale system rollout. I led the transformation of a proof-of-concept codebase into a mission-critical platform, defining architecture improvements, rollout strategy, and engineering standards while mentoring interns and driving feature development under aggressive timelines. I partnered with over 10 engineering teams to drive migration readiness, coordinate dependencies, and manage rollout execution, ensuring successful adoption across the organization. I also built operational dashboards and training systems to support migration monitoring, self-serve debugging, and end-to-end platform usage.
+      I joined my current company in 2023 as a software engineering intern, where I worked on two main projects spanning user-facing system improvements and hardware qualification workflows. One project focused on building security-aware UI signals for RGB keyboards using D-Bus and Python, designed to reduce user error when switching between data classification levels. The second project transitioned me into a more open-ended hardware qualification problem, where I was responsible for defining project requirements and independently designing a solution approach.
     </div>
   </div>
 </div>
@@ -64,17 +62,16 @@ layout: home
     <div class="about-entry-title">Machine Learning</div>
     <div class="about-entry-desc">
         <div class="about-role">
+            <span class="about-role-title">Machine Learning Consultant &middot; Private Client </span>
+            <span class="about-role-date">September 2025 – jJanuary 2026</span>
+        </div>
+        My work as an intern led me directly into a client engagement when a former engineering director founded a startup and brought me on as a machine learning consultant. In this role, I worked closely with a client director to define the ML problem space for voxelized LiDAR classification, translating system constraints into a structured modeling strategy. I designed and executed experiments across multiple machine learning approaches, benchmarking model performance under real-world dataset constraints. I then synthesized results into a recommended implementation and deployment roadmap, enabling a transition from exploratory modeling into a scalable ML solution.
+
+        <div class="about-role">
             <span class="about-role-title">Machine Learning Intern &middot; Pointerra3D </span>
             <span class="about-role-date">Summer 2022 – Spring 2023</span>
         </div>
         I started my ML work at Pointerra3D as a machine learning intern focused on applying machine learning to 3D vegetation data. I built a data pipeline that converted 3D vegetation datasets into PostgreSQL tables hosted on AWS, enabling structured querying for model training. Using this data, I trained and evaluated multiple regression models including Random Forest, Decision Tree, and Lasso Regression to predict vegetation growth over time. I improved model performance from 72% to 98% accuracy and reduced regression runtime to under one minute. I also developed a Python-based visualization tool that converted CSV outputs into 3D models for interpreting predicted growth patterns.
-
-        <div class="about-role">
-            <span class="about-role-title">Machine Learning Consultant &middot; Private Client </span>
-            <span class="about-role-date">September 2025 – jJanuary 2026</span>
-        </div>
-
-        My work as an intern led me directly into a client engagement when a former engineering director founded a startup and brought me on as a machine learning consultant. In this role, I worked closely with a client director to define the ML problem space for voxelized LiDAR classification, translating system constraints into a structured modeling strategy. I designed and executed experiments across multiple machine learning approaches, benchmarking model performance under real-world dataset constraints. I then synthesized results into a recommended implementation and deployment roadmap, enabling a transition from exploratory modeling into a scalable ML solution.
     </div>
   </div>
 </div>
@@ -110,7 +107,7 @@ layout: home
 
   <span 
     class="tag hobby-tag" 
-    data-info="I recently started running, and it has quickly become one of my favorite hobbies. I enjoy long runs around Marina Green and along Lake Street. My next race is the San Francisco Alexi Pappas 10K, and I’m gradually building up to longer distances" 
+    data-info="I recently started running, and it has quickly become one of my favorite hobbies. I enjoy long runs around Marina Green and along Ocean Beach/Golden gate park. My next race is the San Francisco Alexi Pappas 10K, and I’m gradually building up to longer distances" 
     data-photo="/assets/images/run.png">Running
   </span>
 

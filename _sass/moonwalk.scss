@@ -1139,39 +1139,3 @@ body:has(.vine-bg) .w {
 }
 // --------------------------------------------------- //
 
-// -------------- WRITING LIST -------------- //
-.writing-list {
-  list-style: none;
-  padding: 0;
-  margin: 2em 0;
-
-  .writing-item {
-    padding: 1.1em 0;
-    border-bottom: 1px solid var(--border-subtle);
-    margin: 0;
-
-    &:first-child { border-top: 1px solid var(--border-subtle); }
-  }
-
-  .writing-item-title {
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--headings);
-    text-decoration: none;
-    display: block;
-    &:hover { color: var(--links); }
-  }
-
-  .writing-item-placeholder {
-    color: var(--text-secondary);
-    font-weight: 500;
-    font-style: italic;
-  }
-
-  .writing-item-desc {
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-    margin: 0.3em 0 0;
-  }
-}
-// ------------------------------------------ //
