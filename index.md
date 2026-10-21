@@ -7,7 +7,7 @@ layout: home
   <div class="about-bio">
     <h1>Hi, I'm Meghan!</h1>
     <p>
-       I'm a Software Engineer based in San Francisco. I'm originally from Boston, but I decided to leave the cold winters behind and move to California after graduating from the University of Illinois Urbana-Champaign with a degree in Computer Science!
+       I'm a Software Engineer based in San Francisco. I'm originally from Boston, but I moved to California after graduating from the University of Illinois Urbana-Champaign with a degree in Computer Science!
        <br><br>
        Since graduating, I've enjoyed working as a Software Engineer and tackling a wide range of technical challenges. I've always loved problem-solving, but through my experience, I've discovered that I'm especially drawn to larger-scale problems that require collaboration, thoughtful decision-making, and finding solutions that work for everyone involved.
        <br><br>
@@ -28,45 +28,42 @@ layout: home
   </button>
 
   <div class="bubble-panel" id="bubble-panel-edu" hidden>
-    <p>I studied Computer Science at the University of Illinois Urbana-Champaign. I entered college with very little coding experience, but it didn't take long for me to realize I had found the right field. I was fascinated by the wide range of applications for computer science and the endless opportunities to solve meaningful problems. During my time at UIUC, I developed a particular interest in cybersecurity and became actively involved in cybersecurity organizations on campus.</p>
-    <a href="/resume" class="bubble-panel-link">View full resume &rarr;</a>
+    <p>I studied Computer Science at the University of Illinois Urbana-Champaign and loved my time there, especially getting involved in cybersecurity clubs on campus. I-L-L!</p>
+    <a href="/resume" class="bubble-panel-link">View resume &rarr;</a>
   </div>
 
   <button type="button" class="bubble bubble-square" aria-expanded="false" aria-controls="bubble-panel-everfox">
     <span class="bubble-label">Experience</span>
     <span class="bubble-title">Everfox</span>
     <span class="bubble-roles">
-      <span class="bubble-role"><span>Software Engineer II</span><span class="bubble-date">2025 – Present</span></span>
-      <span class="bubble-role"><span>Software Engineer I</span><span class="bubble-date">2024 – 2025</span></span>
-      <span class="bubble-role"><span>Software Engineering Intern</span><span class="bubble-date">Summer 2023</span></span>
+      <span class="bubble-role"><span>Software Engineering Intern</span><span class="bubble-date">May 2023- December 2023</span></span>
+      <span class="bubble-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="6 14 12 20 18 14"/></svg></span>
+      <span class="bubble-role"><span>Software Engineer I</span><span class="bubble-date">January 2024 – Janurary 2025</span></span>
+      <span class="bubble-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="6 14 12 20 18 14"/></svg></span>
+      <span class="bubble-role"><span>Software Engineer II</span><span class="bubble-date">Janurary 2025 – Present</span></span>
     </span>
   </button>
 
   <div class="bubble-panel" id="bubble-panel-everfox" hidden>
-    <h4>Software Engineer II</h4>
-    <p>My focus shifted toward platform ownership and large-scale system rollout. I led the transformation of a proof-of-concept codebase into a mission-critical platform, defining architecture improvements, rollout strategy, and engineering standards while mentoring interns and driving feature development under aggressive timelines. I partnered with over 10 engineering teams to drive migration readiness, coordinate dependencies, and manage rollout execution, ensuring successful adoption across the organization. I also built operational dashboards and training systems to support migration monitoring, self-serve debugging, and end-to-end platform usage.</p>
-    <h4>Software Engineer I</h4>
-    <p>I moved into low-level systems and platform work across multiple engineering teams. I contributed to security hardening through seccomp-based compliance validation, improved system reliability through cross-product bug fixing, and integrated Coverity into the CI and developer toolchain to enable automated static analysis across the organization. I also operated and helped scale a newly established internship program, and led the largest intern project end-to-end, delivering a production-used hardware testing system and establishing execution standards for future cohorts.</p>
-    <h4>Software Engineering Intern</h4>
-    <p>I worked on two main projects spanning user-facing system improvements and hardware qualification workflows. One focused on building security-aware UI signals for RGB keyboards using D-Bus and Python, designed to reduce user error when switching between data classification levels. The second was a more open-ended hardware qualification problem, where I was responsible for defining project requirements and independently designing a solution approach.</p>
-    <a href="/resume" class="bubble-panel-link">View full resume &rarr;</a>
+    <p>I started at Everfox as an intern on the Trusted Thin Client team, working on customer-driven projects to improve the user experience when working across different security classification levels. I also began developing a hardware testing suite that I later led as an intern project, which was ultimately adopted by the testing organization.</p>
+    <p>After joining full-time, I took on broader responsibilities, from organizing and expanding the company's internship program to leading the development and rollout of Magic Mirror. I worked closely with teams across engineering to understand their needs, shape the product's direction, and guide it from an early proof of concept to a tool relied on across the organization. Through these experiences, I discovered how much I enjoy not just solving technical problems, but also figuring out what needs to be built, bringing people together, and guiding projects from idea to execution.</p>
+    <a href="/resume" class="bubble-panel-link">View resume &rarr;</a>
   </div>
 
   <button type="button" class="bubble bubble-square" aria-expanded="false" aria-controls="bubble-panel-ml">
     <span class="bubble-label">Experience</span>
     <span class="bubble-title">ML / AI</span>
     <span class="bubble-roles">
-      <span class="bubble-role"><span>Machine Learning Consultant &middot; Private Client</span><span class="bubble-date">2025 – 2026</span></span>
-      <span class="bubble-role"><span>Machine Learning Intern &middot; Pointerra3D</span><span class="bubble-date">2022 – 2023</span></span>
+      <span class="bubble-role"><span>Machine Learning Intern &middot; Pointerra3D</span><span class="bubble-date">May 2021 – May 2023</span></span>
+      <span class="bubble-arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="6 14 12 20 18 14"/></svg></span>
+      <span class="bubble-role"><span>Machine Learning Consultant &middot; Private Client</span><span class="bubble-date">September 2025 – January 2026</span></span>
     </span>
   </button>
 
   <div class="bubble-panel" id="bubble-panel-ml" hidden>
-    <h4>Machine Learning Consultant &middot; Private Client</h4>
-    <p>My work as an intern led me directly into a client engagement when a former engineering director founded a startup and brought me on as a machine learning consultant. I worked closely with a client director to define the ML problem space for voxelized LiDAR classification, translating system constraints into a structured modeling strategy. I designed and executed experiments across multiple machine learning approaches, benchmarking model performance under real-world dataset constraints, then synthesized results into a recommended implementation and deployment roadmap.</p>
-    <h4>Machine Learning Intern &middot; Pointerra3D</h4>
-    <p>I applied machine learning to 3D vegetation data. I built a data pipeline that converted 3D vegetation datasets into PostgreSQL tables hosted on AWS, enabling structured querying for model training. I trained and evaluated multiple regression models including Random Forest, Decision Tree, and Lasso Regression to predict vegetation growth over time, improving model performance from 72% to 98% accuracy and reducing regression runtime to under one minute. I also developed a Python-based visualization tool that converted CSV outputs into 3D models for interpreting predicted growth patterns.</p>
-    <a href="/resume" class="bubble-panel-link">View full resume &rarr;</a>
+    <p>I started working as a Machine Learning Intern at Pointerra3D in college. I got to explore how machine learning could be used to understand and predict changes in 3D vegetation data. I worked on everything from preparing the data to experimenting with different models, and was able to greatly improve prediction accuracy. I also built a tool to turn the results into 3D visualizations, making it easier to see what the models were predicting.</p>
+    <p>A few years later I was asked to consult for a startup founded by a former colleague, where I was tasked with defining the machine learning strategy for a new project. I worked with the technical lead to understand the business goals and technical constraints, evaluate different approaches, and determine the best direction for the product. By testing and comparing potential solutions, I developed a recommendation and roadmap to guide the project toward production</p>
+    <a href="/resume" class="bubble-panel-link">View resume &rarr;</a>
   </div>
 </div>
 
@@ -96,37 +93,37 @@ layout: home
 <div class="hobby-chips">
   <span 
     class="tag hobby-tag" 
-    data-info="I grew up swimming competitively, and it remains one of my favorite activities. I swim regularly after work and am always looking to connect with other swimmers or encourage people to get into the sport. That led me to join SF Tsunami, which has become my current swim group in San Francisco. My primary stroke is butterfly, and I’m currently working toward open-water swimming in the Bay." 
+    data-info="I grew up swimming competitively, and I still spend a lot of my free time in the pool. I usually swim after work and love meeting other swimmers or convincing friends to give it a try. I'm currently training for a marathon swim in Tahoe and trying to swim in the Bay more frequently." 
     data-photo="/assets/images/swim.JPG">Swimming
   </span>
 
   <span 
     class="tag hobby-tag" 
-    data-info="I started making jewelry a few years ago after realizing I wanted a more hands-on creative outlet in my life. I learned to design and create a variety of pieces, but earrings quickly became my favorite. Over time, I’ve made many of the earrings I wear today myself. That interest eventually grew into the idea of creating a small collection, which inspired my Bijoux Breakdown project!" 
+    data-info="I started making jewelry a few years ago because I wanted a new craft to do. I mostly make earrings and do jewelry repairs for friends and family. I've thought about eventually making my own collection, which is actually what inspired me to build Bijoux Breakdown!" 
     data-photo="/assets/images/earring.png">Jewelry
   </span>
 
   <span 
     class="tag hobby-tag" 
-    data-info="I recently started running, and it has quickly become one of my favorite hobbies. I enjoy long runs around Marina Green and along Ocean Beach/Golden gate park. My next race is the San Francisco Alexi Pappas 10K, and I’m gradually building up to longer distances" 
+    data-info="I recently started running, and it has quickly become one of my favorite hobbies. I enjoy runs along Marina Green and Ocean Beach. I just ran my first 10K, and I’m gradually building up to longer distances!" 
     data-photo="/assets/images/run.png">Running
   </span>
 
   <span 
     class="tag hobby-tag" 
-    data-info="I met many of my friends through Volo, which has become a consistent highlight of my week. I especially enjoyed Volo dodgeball, and my friend group has since started our own weekly version where we rotate through different sports." 
+    data-info="I met a lot of my friends through Volo. We've played a lot of sports at this point, but had surprising success in dodgeball! " 
     data-photo="/assets/images/volo.jpg">Volo
   </span>
 
   <span 
     class="tag hobby-tag" 
-    data-info="I love baking and recently started using a KitchenAid mixer, which has turned it into a weekly hobby. I often bake for friends and roommates and usually end up sharing most of what I make. My favorite desserts to make are tiramisu and anything pumpkin-flavored." 
+    data-info="I love baking and recently purchased a KitchenAid mixer, which has caused me to bake even more. I've gotten into the habit of baking pretty much every week and bringing treats to my friends and roommates. Tiramisu and anything pumpkin-flavored are probably my favorites to make." 
     data-photo="/assets/images/tiramisu.jpeg">Baking
   </span>
 
   <span 
     class="tag hobby-tag" 
-    data-info="I have a beloved cat named Luna, who I adopted two years ago. She is extremely affectionate and loved by everyone who meets her. We spend time playing with her favorite mouse toys, watching birds from our balcony, and going on occasional outdoor adventures." 
+    data-info="I adopted Luna a few years ago and it's one of the bes decisions I've ever made. She's super cute and wins over everyone she meets. We spend time playing with her favorite mouse toys, watching birds from our balcony, and going on occasional outdoor adventures." 
     data-photo="/assets/images/luna6.JPG">Luna
   </span>
 </div>
