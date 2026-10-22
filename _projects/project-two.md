@@ -1,21 +1,25 @@
 ---
 layout: project
 title: AI Project
-description: Todo
+description: "Todo"
 order: 2
 github_url: https://github.com/meghan-tobin/project-two
 demo_url:
 graphic: /assets/images/your-image.png
 ---
 
-## Problem
+## The Idea
 
-Describe the problem this project solves. What was the gap or pain point you identified?
+_What inspired this project? What gap or pain point did you notice?_
 
-## Approach
+## Thinking through the Problem
 
-Explain your approach, key decisions, and any trade-offs you made along the way.
+_How did you break the problem down? What decisions and trade-offs did you make?_
 
-## Outcomes
+## What I Built
 
-What was the result? Metrics, impact, or key takeaways.
+_What does it do, and what is it built with?_
+
+## Next Steps
+
+_Where do you want to take it next?_

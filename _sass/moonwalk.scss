@@ -1,5 +1,5 @@
 :root {
-  --font-sans: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "EB Garamond", Georgia, "Times New Roman", serif;
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -1127,6 +1127,77 @@ body:has(.vine-bg) .w {
   margin-bottom: 0;
 }
 // ------------------------------------------------- //
+
+// -------------- PROJECT STORY SECTIONS -------------- //
+// The Idea / Thinking through the Problem / What I Built / Next Steps
+.project-story {
+  counter-reset: story;
+  margin: 1.5em 0;
+
+  h2 {
+    counter-increment: story;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6em;
+    margin: 1.8em 0 0.5em;
+    font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.5rem);
+
+    &::before {
+      content: counter(story, decimal-leading-zero);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--links);
+    }
+  }
+
+  h2:first-child { margin-top: 0.5em; }
+
+  .project-demo,
+  .project-mockups { margin-top: 1.2em; }
+
+  .mockup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 0.8em;
+
+    figure { margin: 0; }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: #fff;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      &:hover { transform: translateY(-2px); border-color: var(--links); }
+    }
+
+    figcaption {
+      margin-top: 0.4em;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+  }
+
+  h3 {
+    margin: 1.6em 0 0.4em;
+    font-size: 1.3rem;
+    color: var(--headings);
+  }
+
+  ol { padding-left: 1.4em; }
+  strong { color: var(--headings); font-weight: 600; }
+
+  p, li { line-height: 1.65; }
+
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.35em; }
+}
+// ---------------------------------------------------- //
 
 // -------------- PROJECTS GRID (2-col) -------------- //
 .project-cards ul.horizontal-list .card {

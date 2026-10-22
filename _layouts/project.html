@@ -19,30 +19,9 @@ layout: default
 
 <div class="dashed"></div>
 
-<details>
-  <summary>Documentation</summary>
-  {% if page.docs %}
-    {% for doc in page.docs %}
-      <details class="doc-entry" data-doc-url="{{ doc.url }}">
-        <summary>{{ doc.title }}</summary>
-        <div class="doc-entry-content">Loading...</div>
-      </details>
-    {% endfor %}
-  {% else %}
-    {{ content }}
-  {% endif %}
-</details>
-
-<details>
-  <summary>Codebase</summary>
-  {% if page.github_url %}
-    <p><a href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">{{ page.github_url }}</a></p>
-  {% else %}
-    <p>GitHub link coming soon.</p>
-  {% endif %}
-</details>
-
-<details>
+{% capture demo_block %}
+{% if page.demo_video or page.demo_url %}
+<details class="project-demo">
   <summary>Demo</summary>
   {% if page.demo_video %}
     <video controls style="max-width:100%;display:block;margin-top:0.5em;">
@@ -52,39 +31,49 @@ layout: default
     {% if page.demo_url %}
       <p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">View Live Demo →</a></p>
     {% endif %}
-  {% elsif page.demo_url %}
-    <p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">View Demo →</a></p>
   {% else %}
-    <p>Demo coming soon.</p>
+    <p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">View Demo →</a></p>
   {% endif %}
 </details>
-
-{% if page.docs %}
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-(function () {
-  document.querySelectorAll('.doc-entry').forEach(function (entry) {
-    var content = entry.querySelector('.doc-entry-content');
-    var url = entry.dataset.docUrl;
-    var loaded = false;
-
-    entry.addEventListener('toggle', function () {
-      if (entry.open && !loaded) {
-        loaded = true;
-        fetch(url)
-          .then(function (res) {
-            if (!res.ok) throw new Error('Failed to load');
-            return res.text();
-          })
-          .then(function (md) {
-            content.innerHTML = marked.parse(md);
-          })
-          .catch(function () {
-            content.innerHTML = '<p>Could not load. <a href="' + url + '" target="_blank">View on GitHub →</a></p>';
-          });
-      }
-    });
-  });
-})();
-</script>
 {% endif %}
+{% endcapture %}
+
+{% capture mockups_block %}
+{% if page.mockups %}
+<details class="project-mockups">
+  <summary>Mockups</summary>
+  <div class="mockup-grid">
+    {% for mockup in page.mockups %}
+      <figure>
+        <a href="{{ mockup.image }}" target="_blank" rel="noopener">
+          <img src="{{ mockup.image }}" alt="{{ mockup.caption | default: 'Mockup' }}" loading="lazy">
+        </a>
+        {% if mockup.caption %}<figcaption>{{ mockup.caption }}</figcaption>{% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+</details>
+{% endif %}
+{% endcapture %}
+
+{% comment %}
+  Mockups go at the end of "Thinking through the Problem" (the vision),
+  and the demo at the end of "What I Built" (the MVP).
+{% endcomment %}
+{% assign built_split = content | split: '<h2 id="what-i-built">' %}
+{% assign next_split = content | split: '<h2 id="next-steps">' %}
+<article class="project-story">
+  {% if built_split.size > 1 %}
+    {{ built_split[0] }}
+    {{ mockups_block }}
+    {% assign after_built = built_split[1] | split: '<h2 id="next-steps">' %}
+    <h2 id="what-i-built">{{ after_built[0] }}
+    {{ demo_block }}
+    {% if after_built.size > 1 %}<h2 id="next-steps">{{ after_built[1] }}{% endif %}
+  {% else %}
+    {{ next_split[0] }}
+    {{ mockups_block }}
+    {{ demo_block }}
+    {% if next_split.size > 1 %}<h2 id="next-steps">{{ next_split[1] }}{% endif %}
+  {% endif %}
+</article>
