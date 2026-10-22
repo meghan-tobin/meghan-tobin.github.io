@@ -3,7 +3,7 @@ layout: home
 ---
 
 <div class="about-hero">
-  <img src="/assets/images/gate.png" alt="Meghan Tobin" class="about-photo">
+  <img src="/assets/images/web/gate.jpg" alt="Meghan Tobin" class="about-photo">
   <div class="about-bio">
     <h1>Hi, I'm Meghan!</h1>
     <p>
@@ -94,37 +94,37 @@ layout: home
   <span 
     class="tag hobby-tag" 
     data-info="I grew up swimming competitively, and I still spend a lot of my free time in the pool. I usually swim after work and love meeting other swimmers or convincing friends to give it a try. I'm currently training for a marathon swim in Tahoe and trying to swim in the Bay more frequently." 
-    data-photo="/assets/images/swim.JPG">Swimming
+    data-photo="/assets/images/web/swim.jpg">Swimming
   </span>
 
   <span 
     class="tag hobby-tag" 
     data-info="I started making jewelry a few years ago because I wanted a new craft to do. I mostly make earrings and do jewelry repairs for friends and family. I've thought about eventually making my own collection, which is actually what inspired me to build Bijoux Breakdown!" 
-    data-photo="/assets/images/earring.png">Jewelry
+    data-photo="/assets/images/web/earring.jpg">Jewelry
   </span>
 
   <span 
     class="tag hobby-tag" 
     data-info="I recently started running, and it has quickly become one of my favorite hobbies. I enjoy runs along Marina Green and Ocean Beach. I just ran my first 10K, and I’m gradually building up to longer distances!" 
-    data-photo="/assets/images/run.png">Running
+    data-photo="/assets/images/web/run.jpg">Running
   </span>
 
   <span 
     class="tag hobby-tag" 
     data-info="I met a lot of my friends through Volo. We've played a lot of sports at this point, but had surprising success in dodgeball! " 
-    data-photo="/assets/images/volo.jpg">Volo
+    data-photo="/assets/images/web/volo.jpg">Volo
   </span>
 
   <span 
     class="tag hobby-tag" 
     data-info="I love baking and recently purchased a KitchenAid mixer, which has caused me to bake even more. I've gotten into the habit of baking pretty much every week and bringing treats to my friends and roommates. Tiramisu and anything pumpkin-flavored are probably my favorites to make." 
-    data-photo="/assets/images/tiramisu.jpeg">Baking
+    data-photo="/assets/images/web/tiramisu.jpg">Baking
   </span>
 
   <span 
     class="tag hobby-tag" 
     data-info="I adopted Luna a few years ago and it's one of the bes decisions I've ever made. She's super cute and wins over everyone she meets. We spend time playing with her favorite mouse toys, watching birds from our balcony, and going on occasional outdoor adventures." 
-    data-photo="/assets/images/luna6.JPG">Luna
+    data-photo="/assets/images/web/luna6.jpg">Luna
   </span>
 </div>
 
