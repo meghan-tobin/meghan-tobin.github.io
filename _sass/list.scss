@@ -180,3 +180,19 @@ ul.horizontal-list {
     }
   }
 }
+
+/* Swap in a light-line version of a card graphic in dark mode */
+.card-graphic img.graphic-dark { display: none; }
+
+html[data-theme="dark"] .card-graphic {
+  img.graphic-light { display: none; }
+  img.graphic-dark { display: block; }
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="auto"] .card-graphic {
+    img.graphic-light { display: none; }
+    img.graphic-dark { display: block; }
+  }
+}
+

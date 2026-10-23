@@ -1,15 +1,21 @@
 ---
 layout: project
 title: Where's the Whimsy
-description: "Adding whimsy to your life one quest at a time..."
+description: Making your life more whimsical one quest at a time....
 order: 1
 github_url: https://github.com/meghan-tobin/WheresTheWhimsy
 demo_video: /assets/videos/whimsy-demo.mp4
 mockups:
-  - image: /assets/images/whimsy-mockup-feed.png
-    caption: Quest feed
-  - image: /assets/images/whimsy-mockup-quest.png
-    caption: Joining a quest
+  - image: /assets/images/whimsy-open-screen2.jpeg
+    caption: Opening page
+  - image: /assets/images/whimsy-home-page2.jpeg
+    caption: Home page
+  - image: /assets/images/whimsy-quest-view2.jpeg
+    caption: Quest view
+  - image: /assets/images/whimsy-create-quest2.jpeg
+    caption: Create a quest
+  - image: /assets/images/whimsy-explore-page2.jpeg
+    caption: Explore page
 graphic: /assets/images/whimsey.png
 docs:
     - title: README
@@ -26,7 +32,7 @@ The more I thought about it, the more I realized I'd benefit from something like
 
 ## Thinking through the Problem
 
-Trying something new is easier when it feels small, structured, and low-pressure. That idea became the foundation of Where's the Whimsy: a social app built around weekly quests — small challenges like grabbing your coffee somewhere new, cooking something you've never made, or checking out an event in your city.
+Trying something new is easier when it feels small, structured, and low-pressure. That idea became the foundation of Where's the Whimsy: a social app built around weekly **quests** — small challenges like grabbing your coffee somewhere new, cooking something you've never made, or checking out an event in your city. A quest can be anything!
 
 I wanted to create a way for people to step outside their routines, discover new experiences, and connect with others without the pressure of putting themselves out there.
 
@@ -56,7 +62,7 @@ To translate these ideas into a buildable first version, I worked through specif
 
 ### Mock-ups
 
-Movkups to show full thought out app
+These are my original mockups when I started sketching out this idea. I had a friend from college illistrate the opening page!
 
 ## What I Built
 

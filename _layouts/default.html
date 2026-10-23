@@ -17,11 +17,6 @@
         {% if site.theme_config.appearance_toggle %}
           {% include toggle_theme_button.html %}
         {% endif %}
-        {%- if site.theme_config.show_copyright == true -%}
-        <div class="credits">
-          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
-        </div>
-        {%- endif -%}
       </div>
     </main>
 

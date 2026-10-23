@@ -1,5 +1,5 @@
 :root {
-  --font-sans: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -1128,6 +1128,23 @@ body:has(.vine-bg) .w {
 }
 // ------------------------------------------------- //
 
+.project-desc-lede p:last-child { margin-bottom: 0; }
+
+.project-link {
+  margin-top: 0.6rem;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+
+  & + .project-link { margin-top: 0.1rem; }
+  &:last-child { margin-bottom: 0.9rem; }
+
+  a {
+    color: var(--links);
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
 // -------------- PROJECT STORY SECTIONS -------------- //
 // The Idea / Thinking through the Problem / What I Built / Next Steps
 .project-story {
@@ -1156,23 +1173,32 @@ body:has(.vine-bg) .w {
   .project-demo,
   .project-mockups { margin-top: 1.2em; }
 
+  // Mockups scroll sideways: about 2.5 visible, the rest a swipe/scroll away.
   .mockup-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
     gap: 1em;
     margin-top: 0.8em;
+    padding-bottom: 0.6em;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 
-    figure { margin: 0; }
+    figure {
+      flex: 0 0 38%;
+      margin: 0;
+      scroll-snap-align: start;
+    }
 
     img {
       display: block;
       width: 100%;
-      height: auto;
+      aspect-ratio: 9 / 16;
+      object-fit: contain; // show the whole sketch, never crop
       border-radius: var(--radius-md);
       border: 1px solid var(--border);
-      background: #fff;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-      &:hover { transform: translateY(-2px); border-color: var(--links); }
+      background: #f9f7ea; // matches the sketch paper
+      transition: border-color 0.2s ease;
+      &:hover { border-color: var(--links); }
     }
 
     figcaption {
@@ -1180,6 +1206,10 @@ body:has(.vine-bg) .w {
       font-size: 0.9rem;
       color: var(--text-secondary);
       text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+      figure { flex-basis: 70%; }
     }
   }
 

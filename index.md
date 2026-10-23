@@ -9,9 +9,9 @@ layout: home
     <p>
        I'm a Software Engineer based in San Francisco. I'm originally from Boston, but I moved to California after graduating from the University of Illinois Urbana-Champaign with a degree in Computer Science!
        <br><br>
-       Since graduating, I've enjoyed working as a Software Engineer and tackling a wide range of technical challenges. I've always loved problem-solving, but through my experience, I've discovered that I'm especially drawn to larger-scale problems that require collaboration, thoughtful decision-making, and finding solutions that work for everyone involved.
+       Since graduating, I've enjoyed working as a Software Engineer and seeing projects evolve from initial ideas into solutions with a real impact. Over time, I've found myself wanting to be more involved in the process of understanding customer needs, shaping ideas, and working with people to bring them to life.
        <br><br>
-       I'm excited to keep learning, take on new challenges, and apply my technical background to building products that solve meaningful problems. I'm particularly interested in opportunities where I can combine technical problem-solving with collaboration and a broader perspective on how products are built.
+       I'm looking for opportunities to build on my engineering background while getting more involved in product decisions, collaborating with different teams, and helping shape products from idea to execution.
     </p>
   </div>
 </div>
@@ -45,8 +45,8 @@ layout: home
   </button>
 
   <div class="bubble-panel" id="bubble-panel-everfox" hidden>
-    <p>I started at Everfox as an intern on the Trusted Thin Client team, working on customer-driven projects to improve the user experience when working across different security classification levels. I also began developing a hardware testing suite that I later led as an intern project, which was ultimately adopted by the testing organization.</p>
-    <p>After joining full-time, I took on broader responsibilities, from organizing and expanding the company's internship program to leading the development and rollout of Magic Mirror. I worked closely with teams across engineering to understand their needs, shape the product's direction, and guide it from an early proof of concept to a tool relied on across the organization. Through these experiences, I discovered how much I enjoy not just solving technical problems, but also figuring out what needs to be built, bringing people together, and guiding projects from idea to execution.</p>
+    <p>I started at Everfox as an intern on the Trusted Thin Client team, working on customer-driven projects to improve the user experience across different security classification levels. I also began developing a hardware testing suite that I later led as an intern project, which was ultimately adopted by the testing organization.</p>
+    <p>After joining full-time, I took on broader responsibilities, from organizing and expanding the company's internship program to leading the development and rollout of Magic Mirror. I worked closely with engineering teams to understand their needs, shape the product's direction, and guide it from an early proof of concept to a mission-critical tool used throughout the engineering organization.</p>
     <a href="/resume" class="bubble-panel-link">View resume &rarr;</a>
   </div>
 
@@ -62,7 +62,7 @@ layout: home
 
   <div class="bubble-panel" id="bubble-panel-ml" hidden>
     <p>I started working as a Machine Learning Intern at Pointerra3D in college. I got to explore how machine learning could be used to understand and predict changes in 3D vegetation data. I worked on everything from preparing the data to experimenting with different models, and was able to greatly improve prediction accuracy. I also built a tool to turn the results into 3D visualizations, making it easier to see what the models were predicting.</p>
-    <p>A few years later I was asked to consult for a startup founded by a former colleague, where I was tasked with defining the machine learning strategy for a new project. I worked with the technical lead to understand the business goals and technical constraints, evaluate different approaches, and determine the best direction for the product. By testing and comparing potential solutions, I developed a recommendation and roadmap to guide the project toward production</p>
+    <p>A few years later I was asked to consult for a early-venture founded by a former colleague, where I was tasked with defining the machine learning strategy for a new project. I worked to understand the business goals and technical constraints, evaluate different approaches, and determine the best direction for the product. By testing and comparing potential solutions, I developed a recommendation and roadmap to guide the project toward production</p>
     <a href="/resume" class="bubble-panel-link">View resume &rarr;</a>
   </div>
 </div>

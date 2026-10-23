@@ -16,13 +16,13 @@ collections:
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "dark" # can be "light", "dark" or "auto"
+  appearance: "light" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: false # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
+  show_copyright: false # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: false # managed by /projects page instead
   show_blog: false

@@ -7,6 +7,7 @@ github_url: https://github.com/meghan-tobin/Wikipedia-Automater
 website_url: https://wikiautomator.dev/
 demo_url:
 graphic: /assets/images/wiki.png
+graphic_dark: /assets/images/new-wiki.png
 demo_video: /assets/videos/wikidemo.mp4
 docs:
     - title: README
