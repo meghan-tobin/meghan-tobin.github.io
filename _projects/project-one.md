@@ -24,24 +24,22 @@ docs:
 
 ## The Idea
 
-The inspiration for this project came from living with a roommate who struggled to get outside of her comfort zone and experience new activities. I think this is something we all struggle with after college: life can become mundane, and we fall into a structured routine with little time for anything else. Maybe weekends are fun, but how often are we trying a new activity or starting a new experience?
+The inspiration for this project came from living with a roommate who struggled to get outside of her comfort zone and experience new activities. She had a very structured lifestyle , and constantly expressed how she struggled to introduce new experience into her lifestyle. I think this is something we all struggle with after college: life can become mundane, and we fall into a structured routine with little time for anything new. 
 
-After a few months of living with my roommate, all I could think was, **"where's the whimsy?"** She had a very structured lifestyle, so it got me thinking: is there a structured way to introduce new things? Could she enjoy life more if something helped her move past her comfort zone in a structured way?
-
-The more I thought about it, the more I realized I'd benefit from something like that too. A way to add something new to your week.
+After a few months of living with my roommate, I started wondering if there was structured way to introduce new things into her life. The more I thought about it, the more I realized I'd benefit from something like that too. A way to add something new to your week in a low preassure and fun wqay. This is where "Where's the Whimsey" was born!
 
 ## Thinking through the Problem
 
-Trying something new is easier when it feels small, structured, and low-pressure. That idea became the foundation of Where's the Whimsy: a social app built around weekly **quests** — small challenges like grabbing your coffee somewhere new, cooking something you've never made, or checking out an event in your city. A quest can be anything!
+Trying something new is easier when it feels small, structured, and low-pressure. That idea became the foundation of Where's the Whimsy: a social app built around weekly **quests** - small challenges like grabbing your coffee somewhere new, cooking something you've never made, or checking out an event in your city. A quest can be anything and thats the point. 
 
-I wanted to create a way for people to step outside their routines, discover new experiences, and connect with others without the pressure of putting themselves out there.
+I wanted to create a way for people to step outside their routines, discover new experiences, and connect with others without feeling pressured or scared.
 
 ### Market Research
 
-Before writing code, I explored existing apps to understand how they approached social discovery, group activities, and meeting new people.
+Before writing code, I explored existing apps to see if a solution like this already existed. I researched other social apps to see waht optiosn existed for finding activities and meeting new people. 
 
 - **Sidequest** was one of the closest concepts to what I had in mind, but was not widley used and was focused on an activity rating system.
-- **Bumble BFF** and **222** offered ways to meet new people, but I wanted to explore a lower-pressure alternative for people who might find traditional social settings intimidating.
+- **Bumble BFF** and **222** offered ways to meet new people, but I wanted to explore a lower-pressure alternative for people who might find social settings intimidating. 
 - **Partiful** inspired some of the app's layout and event-discovery experience, but discovering activities there often depends on your existing network or finding public events.
 
 I saw an opportunity to bring together the discovery aspect of social apps with small, approachable challenges that people could participate in on their own terms.
@@ -54,9 +52,9 @@ I wanted the first version to focus on three things:
 2. Helping users discover quests that interest them
 3. Making participation feel low-pressure
 
-**Anonymity was a core product decision.** Social media can make even everyday activities feel performative, and I didn't want that pressure to carry over into Where's the Whimsy. Each user gets a randomly generated username for every quest, allowing them to participate without tying their activity to a persistent public identity.
+**Removing social pressure was a core product decision.** Social media can make even everyday activities feel performative, and I didn't want that pressure to carry over into Where's the Whimsy. Unlike most social media platforms, there are no followers, likes, or other popularity metrics. This allows users to participate without tying their actions to likes and follows.
 
-**Quests should feel like more than a checklist.** I added discussion threads, photo sharing, points for completing quests, and a community vote to crown a champion. These features introduce a sense of community and friendly competition while keeping participation flexible: users can engage as much or as little as they want.
+**Quests should feel like more than a checklist.** I added discussion threads, photo sharing, points for completing quests, and a community vote to crown a champion. These features introduce a sense of community and friendly competition while keeping participation flexible: users can engage as much or as little as they want. They could use the app to form new freidfnships and interact with fellow users, or complete the quests without doing any of that.
 
 To translate these ideas into a buildable first version, I worked through specifications for the quest lifecycle, categories, the onboarding quiz, and discussion rules, alongside UI wireframes. This helped define the core experience before implementation.
 
@@ -72,7 +70,6 @@ The current backend supports:
 
 - **Quest discovery:** a feed filtered by category, location, and popularity
 - **Quest creation:** titles, descriptions, categories, and whimsy point values
-- **Anonymous participation:** a unique username for each user in each quest
 - **Community discussion:** threaded conversations, upvotes, and moderation
 - **Friendly competition:** a 30-minute champion-voting window at the end of each quest, with double points for the winner
 - **Private quests:** invite links for quests shared with a specific group
